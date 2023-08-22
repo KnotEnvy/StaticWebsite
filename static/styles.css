@@ -1,0 +1,115 @@
+:root {
+    --primary: #006400; /* Deep Green */
+    --secondary: #800080; /* Purple */
+    --tertiary: #A9A9A9; /* Grey */
+}
+body {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+}
+
+h1 {
+    /* Set a default font size using viewport units */
+    font-size: 10vw;
+    font-size: calc(32px + 5vw);
+  }
+  
+  /* If the screen width is less than 600px, set the font size to 36px */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 36px;
+    }
+  }
+  
+  /* If the screen width is more than 1200px, set the font size to 120px */
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 120px;
+    }
+  }
+  
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.hero-section {
+    background: url('bg3.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: #c6bdbd;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .navbar {
+    background-color: var(--secondary);
+} */
+/* Define a custom class for your navbar */
+.navbar-custom {
+    background-color: var(--secondary); /* Use your primary color variable */
+    color: var(--primary); /* Use your secondary color variable */
+  }
+  
+  /* Change the color of the links in the navbar */
+  .navbar-custom a {
+    color: var(--tertiary); /* Use your secondary color variable */
+  }
+  
+  /* Change the color of the links when hovered */
+  .navbar-custom a:hover {
+    color: #ffffff; /* Use white for contrast */
+  }
+  
+
+.btn-light {
+    background-color: var(--secondary);
+    color: #ffffff;
+}
+.review-card {
+    border: 2px solid var(--tertiary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+.contact-form {
+    background-color: var(--tertiary);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary);
+}

@@ -1,0 +1,54 @@
+/* This is the external CSS file named serviceSection.css */
+
+/* Define some custom properties (CSS variables) for your color scheme */
+:root {
+    --primary-color: #006400; /* Deep Green */
+    --secondary-color: #800080; /* Purple */
+    --tertiary-color: #A9A9A9; /* Grey */
+  }
+  
+  /* Style the h2 element that contains the title of your services section */
+  h2 {
+    text-align: center; /* Align the text to the center */
+    font-size: 36px; /* Set the font size to 36 pixels */
+    color: var(--primary-color); /* Use your primary color variable */
+    margin-bottom: 20px; /* Add some bottom margin */
+  }
+  
+  /* Style the div elements that contain each service box */
+  .col-md-4 {
+    padding: 20px; /* Add some padding */
+  }
+  
+  /* Style the h3 elements that contain the title of each service */
+  h3 {
+    font-size: 24px; /* Set the font size to 24 pixels */
+    color: var(--secondary-color); /* Use your secondary color variable */
+    margin-bottom: 10px; /* Add some bottom margin */
+  }
+  
+  /* Style the p elements that contain the description of each service */
+  p {
+    font-size: 18px; /* Set the font size to 18 pixels */
+    color: var(--tertiary-color); /* Use your tertiary color variable */
+    line-height: 1.5; /* Set the line height to 1.5 times the font size */
+  }
+  
+  /* Style the service-icon class that contains the font-awesome icon of each service */
+  .service-icon {
+    font-size: 48px; /* Set the font size to 48 pixels */
+    color: var(--primary-color); /* Use your primary color variable */
+  }
+  
+  /* Style the service-wrap class that contains the whole content of each service box */
+  .service-wrap {
+    border: 2px solid var(--tertiary-color); /* Add a border with your tertiary color variable */
+    border-radius: 10px; /* Add some border radius */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Add some box shadow */
+  }
+  
+  /* Add a hover effect on each service box using transform and skew properties */
+  .service-wrap:hover {
+    transform: scale(1.05) skew(-10deg); /* Scale up by 5% and skew by -10 degrees */
+  }
+  
