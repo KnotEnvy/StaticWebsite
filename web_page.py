@@ -57,49 +57,49 @@ class WebPage:
                     """
 
     def render_services(self):
-        return """<section class="py-5">
+        return """<section class="service-section py-5">
                     <!-- Create a parent card -->
-                    <div class="card">
-                    <!-- Add a header for the parent card -->
-                    <div class="card-header">
-                        <h2>Our Services</h2>
+                    <div class="card service-card">
+                        <!-- Add a header for the parent card -->
+                        <div class="service-header">
+                            <h2>Our Services</h2>
+                        </div>
+                        <!-- Add a body for the parent card -->
+                        <div class="card-body">
+                            <!-- Create a grid to hold the child cards -->
+                            <div class="row">
+                                <!-- Create the first child card -->
+                                <div class="col-md-4">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <h3>Online Discord Community</h3>
+                                            <p>Join our online discord community where you can connect with other coders, share your projects, get feedback, and more.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Create the second child card -->
+                                <div class="col-md-4">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <h3>AI Education Center</h3>
+                                            <p>Learn about AI from our AI education center, offering courses, workshops, and more on various topics related to AI.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Create the third child card -->
+                                <div class="col-md-4">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <h3>Web Development Services</h3>
+                                            <p>Hire us for your web development needs. We deliver high-quality results that meet your expectations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Add a body for the parent card -->
-                    <div class="card-body">
-                        <!-- Create a row to hold the child cards -->
-                        <div class="row">
-                        <!-- Create the first child card -->
-                        <div class="col-md-4">
-                            <div class="card">
-                            <div class="card-body">
-                                <h3>Online Discord Community</h3>
-                                <p>Description: Join our online discord community where you can connect with other coders, share your projects, get feedback, learn new skills, participate in events, and have fun. Whether you are a beginner or an expert, you will find a welcoming and supportive environment where you can grow as a developer.</p>
-                            </div>
-                            </div>
-                        </div>
-                        <!-- Create the second child card -->
-                        <div class="col-md-4">
-                            <div class="card">
-                            <div class="card-body">
-                                <h3>AI Education Center</h3>
-                                <p>Description: Learn about AI from our AI education center, where we offer courses, workshops, webinars, podcasts, and more on various topics related to AI. Whether you want to learn the basics of AI, explore its applications in different domains, or dive into its ethical and social implications, we have something for you.</p>
-                            </div>
-                            </div>
-                        </div>
-                        <!-- Create the third child card -->
-                        <div class="col-md-4">
-                            <div class="card">
-                            <div class="card-body">
-                                <h3>Web Development Services</h3>
-                                <p>Description: Hire us for your web development needs. We are a team of experienced and skilled web developers who can create stunning and responsive websites for your business or personal use. We use the latest technologies and best practices to deliver high-quality results that meet your expectations.</p>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                   </section>"""
+                </section>
+                """
 
     def render_testimonials(self):
         return """<section class="py-5 bg-light">
